@@ -1,0 +1,53 @@
+extends base.pug
+
+block script 
+    script(src="/static/index.js") 
+
+block style 
+    style 
+        include ../static/style.css
+
+block content 
+    
+    section#introSection 
+        div Welcome to Utsa's Dance academy 
+        div.small Eat Sleep Dance Repeat
+
+    section#missionSection 
+        h2 Our Mission
+        div.card 
+            h3 Dance perfection
+            div.card-box
+                div.card-img
+                    img(src="/static/img/logo1.jpg", alt="")
+                
+                div.card-content
+                    p This is the best dance academy of the universe 
+
+        div.card 
+            h3 Dance the way you like
+            div.card-box
+                div.card-img
+                    img(src="/static/img/logo2.jpeg", alt="")
+                
+                div.card-content
+                    p This is the best dance academy of the universe 
+
+        div.card 
+            h3 Expert teaching
+            div.card-box
+                div.card-img
+                    img(src="/static/img/logo3.jpeg", alt="")
+                
+                div.card-content
+                    p This is the best dance academy of the universe 
+
+
+    section#sponsorSection 
+        h2 Our Sponsors
+        div#sponsors
+            img(src="/static/img/Aplle logo.jpg", alt="Sponsor image" class="spImage")
+            img(src="/static/img/skype logo.jpg", alt="Sponsor image" class="spImage")
+            img(src="/static/img/clogo.jpg", alt="Sponsor image" class="spImage")
+            img(src="/static/img/clogo2.png", alt="Sponsor image" class="spImage")
+    
